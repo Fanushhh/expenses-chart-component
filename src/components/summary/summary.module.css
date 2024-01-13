@@ -16,12 +16,34 @@
 .graphBarContainer{
     max-width: 50px;
     width: 100%;
-    
+    position:relative;
 }
 .graphBar{
     background-color: var(--soft-red);
     margin-bottom: 8px;
     border-radius: 5px;
+}
+.graphBarTooltip{
+    position:absolute;
+    top:-40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: var(--fw-heading);
+    white-space: nowrap;
+    display: none;
+}
+.graphBar:hover{
+    cursor:pointer;
+    background-color: #B4E0E5 !important;
+}
+.graphBarContainer:hover .graphBarTooltip{
+    display: block;
+    
 }
 .spendingReport{
     display: flex;
