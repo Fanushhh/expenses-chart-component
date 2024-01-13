@@ -21,7 +21,7 @@ export const Summary = () => {
                 }}
                 className={styles.graphBar}
               ></motion.div>
-              <span className={styles.graphBarTooltip}>{"$" + item.amount}</span>
+              <span className={styles.graphBarTooltip}>{"$" + item.rawAmount}</span>
               <motion.p
                 layout="position"
                 transition={{ delay: index * 0.1 , type: "spring", stiffness: 60, damping:10}}
