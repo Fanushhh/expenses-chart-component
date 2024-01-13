@@ -1,0 +1,16 @@
+.balanceWrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 32px;
+    background-color:var(--soft-red);
+    width: 100%;
+    max-width: 540px;
+    border-radius: 20px;
+    color:white;
+}
+
+.balanceWrapper h1{
+    font-size: 32px;
+    line-height: 1.3;
+}
